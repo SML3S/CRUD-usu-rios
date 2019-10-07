@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sml3s.cruddemo1.activites.MainActivity">
+    <item
+        android:id="@+id/action_alteracao_usuario"
+        android:icon="@drawable/ic_action_alteracao_usuarios"
+        android:orderInCategory="100"
+        android:title="Ateração de usuario"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_cadastro_de_usuario"
+        android:icon="@drawable/ic_action_cadastro_de_usuario"
+        android:title="Cadastro de usuario"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_excluir_usuario"
+        android:icon="@drawable/ic_action_excluir_usuarios"
+        android:title="Excluir usuario"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_lista_usuario"
+        android:icon="@drawable/ic_action_lista_usuarios"
+        android:title="Todos"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_login"
+        android:icon="@drawable/ic_action_login"
+        android:title="Login"
+        app:showAsAction="always" />
+</menu>
