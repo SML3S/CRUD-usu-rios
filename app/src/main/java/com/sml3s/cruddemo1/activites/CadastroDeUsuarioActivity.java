@@ -15,7 +15,7 @@ import com.sml3s.cruddemo1.services.RetrofitService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
+
 
 public class CadastroDeUsuarioActivity extends AppCompatActivity {
 
@@ -33,7 +33,7 @@ public class CadastroDeUsuarioActivity extends AppCompatActivity {
         String email =((EditText) findViewById(R.id.et_cadastro_usuario_email)).getText().toString();
         String senha =((EditText) findViewById(R.id.et_cadastro_usuario_password)).getText().toString();
 
-        DtoUser dtoUser = new DtoUser(email, nome,telefone, senha);
+        DtoUser dtoUser = new DtoUser(email,nome,senha,telefone);
         RetrofitService.getServico(this).cadastraUsuarios(dtoUser).enqueue(new Callback<DtoUser>() {
             @Override
             public void onResponse(Call<DtoUser> call, Response<DtoUser> response) {
